@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: lightgrey;
+    align-items: center;
+    height: 8vh;
+    border: solid black 1px;
+}
+#camera {
+    margin: 0px 0 0 10vw;
+}
+#hamburger {
+    margin: 0px 5vw 0 0;
+}
+
+h3 {
+    margin: 0px 0 0 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background: lightgrey;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    transition: 1s;
+    border: solid black 1px;
+}
+nav > li {
+    margin: 5px 0;
+    opacity: .6;
+}
+.hide {
+    height: 0;
+    overflow: hidden;
+}
+.sideNav {
+    display: none !important;
+    
+}
+.sideNavFlex {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+}
+li {
+    margin: 0 5px;
+    opacity: .6;
+}
+
+@media (min-width: 768px) {
+    .sideNav {
+        display: inline-block !important;
+    }
+    #hamburger {
+        display: none;
+    }
+}
